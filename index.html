@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafío DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="text-center">
+
+    <main>
+        <div class="mb-4">
+            <h1>Desafío Dom</h1>
+        </div>
+        <div>
+            <p>Alumno: Dylan Ochoa</p>
+        </div>
+        <div class="d-flex">
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/OnePiece_nro1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">One Piece Tomo nro 1</h5>
+                    <p class="card-text item-precio">$2000</p>
+                    <button class="btn btn-primary agregarACarrito">Comprar</button>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/OnePiece_nro2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">One Piece Tomo nro 2</h5>
+                    <p class="card-text item-precio">$2150</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/DragonBallZ_nro1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Dragon Ball Z Tomo nro 1</h5>
+                    <p class="card-text item-precio">$1900</p>
+                    <a class="btn btn-primary button agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/DragonBallZ_nro2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Dragon Ball Z Tomo nro 2</h5>
+                    <p class="card-text item-precio">$2100</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/Haikyu_nro1.webp" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Haikyu Tomo nro 1</h5>
+                    <p class="card-text item-precio">$1700</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/Haikyu_nro2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Haikyu Tomo nro 2</h5>
+                    <p class="card-text item-precio">$1800</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/HxH_nro1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Hunter X Hunter Tomo nro 1</h5>
+                    <p class="card-text item-precio">$2000</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+            <div class="card item" style="width: 18rem;">
+                <img class="card-img-top item-imagen" src="./assest/img/HxH_nro2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title item-nombre">Hunter X Hunter Tomo nro 2</h5>
+                    <p class="card-text item-precio">$2050</p>
+                    <a class="btn btn-primary agregarACarrito">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-4">
+                    <h2 class="heading-section">Carrito</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-wrap">
+                        <table class="table">
+                            <thead class="thead-primary">
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>&nbsp;</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody class="contenedorItemCarrito">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class=" d-flex align-items-center">
+                    <p class="mb-0">Total:</p>
+                    <p class="ml-4 mb-0 precioTotal">$0</p>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                        data-delay="2000">
+                        <div class="toast-header">
+                            <span>✅</span>
+                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body text-white">
+                            Se aumentó correctamente la cantidad
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success ml-auto finalizar" type="button"
+                        data-target="#comprarModal">Finalizar</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+<script src="./main.js"></script>
+
+</html>
